@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Calculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RevitModel.cs" />
     <Compile Include="Settings\SettingsStore.cs" />
     <Compile Include="Settings\SettingValue.cs" />
     <Compile Include="StructConstants.cs" />

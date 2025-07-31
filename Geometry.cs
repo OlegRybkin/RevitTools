@@ -1,6 +1,7 @@
 ﻿using Autodesk.Revit.DB;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,5 +22,15 @@ namespace RevitTools
             return midPoint;
         }
 
+        static public bool IsVectorsMatches (XYZ vector1, XYZ vector2)
+        {
+            if (Math.Round(vector1.X, 2) == Math.Round(vector2.X, 2) &&
+                Math.Round(vector1.Y, 2) == Math.Round(vector2.Y, 2) &&
+                Math.Round(vector1.Z, 2) == Math.Round(vector2.Z, 2))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
